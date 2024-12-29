@@ -1,0 +1,242 @@
+html, body {
+   
+}
+/*========== header styling =========*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E8E8E8;
+    padding: 20px;
+    background-color: #000;
+}
+.header .header-section-right {
+    display: flex;
+    align-items: center;
+}
+.header .header-section-right span {
+    padding-right: 20px;
+    color: #fff;
+    text-transform: capitalize;
+}
+.header .login-logout {
+    color: #fff;
+    background: green;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.header .login {
+    text-decoration: none;
+}
+.header .header-section-right .logout {
+    border: none;
+}
+.header .menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.header .menu li {
+    padding: 10px;
+    width: 100px;
+    margin: 0 5px;
+    text-align: center;
+}
+.header .menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.header .menu li:hover {
+    background: green;
+}
+.header .menu .active {
+    background: green;
+}
+/*=========== content styling =============*/
+.container {
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-wrapper {
+    max-width: 650px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #d8e4bc;
+    padding: 30px;
+    margin-top: 50px;
+}
+.container .list-user-wrapper {
+    max-width: 100%;
+    background-color: #fff;
+    margin-top: 0;
+}
+.form-wrapper .field-wrapper {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-wrapper .field-wrapper input, .form-wrapper .field-wrapper .description-textarea {
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 300px;
+    width: 100%;
+    border: none;
+}
+.form-wrapper .field-wrapper span {
+    flex-basis: 25%;
+}
+.form-wrapper .field-wrapper .preview-image {
+    max-width: 320px;
+    width: 100%;
+}
+.form-wrapper .btn-wrapper {
+   display: flex;
+   justify-content: center;
+}
+.form-wrapper .btn-wrapper input {
+    padding: 10px;
+    margin: 5px 0 0 -10px;
+    background-color: green;
+    border-radius: 5px;
+    max-width: 150px;
+    color: #fff;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+.container .form-wrapper h2 {
+    text-align: center;
+    color: green;
+}
+.container .table-list-user {
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin: 20px 0;
+}
+.container td, th {
+    padding: 10px;
+    text-align: center;
+}
+.container tr {
+    border-bottom: 2px solid #fff; 
+}
+.container tr:last-child {
+    border-bottom: none;
+}
+.container table tr:nth-child(even) {
+    background-color: #E8E8E8;
+}
+.container table tr:nth-child(odd) {
+    background-color: #d8e4bc;
+}
+.container .list-user-wrapper .table-list-user tr td .action {
+    cursor: pointer;
+}
+.container .list-user-wrapper .add-new-user {
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+    padding: 10px;
+    background-color: green;
+    border-radius: 10px;
+}
+.container .list-user-wrapper .add-new-user:hover {
+    color: #fff;
+}
+.container .list-user-wrapper .no-user-list {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/*========= post styling =======*/
+.container .post-info-wrapper {
+    display: flex;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+.container .post-info-wrapper .each-post-content {
+    width: calc(25% - 20px);
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 20px 10px;
+    line-height: 1.5rem;
+    color: #787878;
+}
+.container .post-info-wrapper .each-post-content img {
+    max-width: 350px;
+    margin-bottom: 10px;
+}
+.container .post-info-wrapper .each-post-content .post-title {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: #000;
+}
+.container .post-info-wrapper .each-post-content .post-date-owner {
+    display: flex;
+    justify-content: space-between;
+}
+.container .post-info-wrapper .each-post-content .post-date-owner .post-date {
+    font-style: italic;
+}
+.container .post-info-wrapper .each-post-content .description {
+    padding-top: 10px;
+}
+.container .post-info-wrapper .each-post-content .edit-delete-post {
+    cursor: pointer;
+    text-align: right;
+    font-weight: bold;
+}
+.container .post-info-wrapper .each-post-content .edit-delete-post a {
+    color: green;
+    text-decoration: none;
+}
+.container .post-info-wrapper .each-post-content .edit-delete-post .delete-post {
+    color: #A52A2A;
+}
+/*========= custom style of image upload ========*/
+input[type="file"] {
+    display: none;
+}
+.custom-image-upload {
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: #fff;
+    max-width: 300px;
+    width: 100%;
+}
+.custom-image-upload .icon-upload {
+    width: 20px;
+}
+
+
+/*======== footer ========*/
+.footer {
+    padding: 20px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0;
+}
+.footer .footer-content {
+    color: #fff;
+    line-height: 2rem;
+    text-align: center;
+}
+.footer .footer-content .text-head {
+    font-size: 1.5rem;
+}
